@@ -6,7 +6,7 @@
 
 body{
     margin:auto 20% !important;
-    background-image:url(./../images/test.jpg);
+    background-image:url(./../images/main/test.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;    
@@ -107,7 +107,7 @@ table, th, td{
 
 /*Data for collapse*/
 .collapsible{
-    background-image: url(./../images/m14-collapse.jpg);
+    background-image: url(./../images/sharp/m14-collapse.jpg);
     background-repeat: no-repeat;
     background-size:50%;
     background-color: white;
