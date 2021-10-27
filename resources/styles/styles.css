@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:auto 20% !important;
+    background-image:url(./../images/test.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;    
+    background-color:black;
+}
+
+/* General Formatting */
+.container{
+    padding:10px;
+    margin:10px auto;
+}
+h1, h2, h3{
+    display:inline-block;
+    font-family:Oswald;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    width:100%;
+    margin-right:0.5em;
+    margin-bottom:3px;
+}
+hr{
+    background-color:white;
+    border:none;
+    height:1px;
+}
+p{
+    display:block;
+    text-align:left;
+    margin:1em 0.25em;
+    font-family:Rajdhani;
+    color:white;
+    font-size:30px;
+}
+ul{
+    margin:1em 1em;
+    font-family:Rajdhani;
+    color:white;
+    font-size:30px;
+}
+
+/*Table formating*/
+table, th, td{
+    border:solid white 1px;
+    padding:20px;
+    border-collapse:collapse;
+    font-family:Rajdhani;
+    color:white;
+    font-weight:bolder;
+    font-size:30px;
+    margin: 30px 0;
+}
+
+.table-heading{
+    display:inline;
+}
+
+/*Gun Icon Formatting */
+#gun-icon{
+    display:inline-flex;
+    height:80px;
+    width:80px;
+    margin-bottom:-20px;
+}
+.weapons{
+    display:inline;
+}
+
+/*Perk Icon Formatting */
+.icon{
+    display:inline;
+    height: 120px;
+    width: 120px;
+    margin-bottom:-20px;
+    margin-left:-20px;
+}
+
+#class{
+    display:inline;
+    font-size:80px;
+    color:white;
+}
+
+/*Weapon Formating */
+.gun-image{
+    display:block;
+    float:right;
+    margin-left:50px;
+}
+.gun-text{
+    position: relative;
+    right:8px;
+}
+
+.gun h2{
+    margin-top:1em;
+}
+
+/*Data for collapse*/
+.collapsible{
+    background-image: url(./../images/m14-collapse.jpg);
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    padding-bottom:5%;
+    height: 50px;
+    font-size:40px;
+    text-align: right;
+    line-height: 1.37;
+  }
+  
+  .active, .collapsible:hover {
+    color:red;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
