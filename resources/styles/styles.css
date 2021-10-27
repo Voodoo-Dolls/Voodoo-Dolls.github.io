@@ -64,6 +64,50 @@ table, th, td{
     display:inline;
 }
 
+/*Title Formatting*/
+.title img{
+    display:inline-flex;
+    height:100px;
+    width:100px;
+    position:relative;
+    top:10px;
+}
+.title h1{
+    width:auto;
+    font-size:80px;
+}
+.menu a{
+    font-family:Oswald;
+    font-size:30px;
+    color:white;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: black;
+    z-index:1;
+    width: 100%;
+    
+}
+
+.dropdown-content a{
+    width:100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-right: 100%;
+    width: 100%;
+  }
+
 /*Gun Icon Formatting */
 #gun-icon{
     display:inline-flex;
@@ -111,7 +155,7 @@ table, th, td{
 .cspx{
     background-image: url(./../images/sharp/spx-collapse.jpg);
 }
-.collapsible{
+.gun-section .collapsible{
     
     background-repeat: no-repeat;
     background-size:50%;
