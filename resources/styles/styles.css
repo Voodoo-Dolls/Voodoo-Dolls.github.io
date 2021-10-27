@@ -92,7 +92,6 @@ table, th, td{
 
 /*Weapon Formating */
 .gun-image{
-    display:block;
     float:right;
     margin-left:50px;
 }
@@ -106,8 +105,14 @@ table, th, td{
 }
 
 /*Data for collapse*/
-.collapsible{
+.cm14{
     background-image: url(./../images/sharp/m14-collapse.jpg);
+}
+.cspx{
+    background-image: url(./../images/sharp/spx-collapse.jpg);
+}
+.collapsible{
+    
     background-repeat: no-repeat;
     background-size:50%;
     background-color: white;
