@@ -1,5 +1,4 @@
 body{
-    display: flex;
     margin:0 20%;
     padding:0;
     box-sizing: border-box;
@@ -11,14 +10,8 @@ body{
 
 
 h1, h2, h3{
-    display:inline-block;
     font-family:Oswald;
     color:white;
-    font-size:3em;
-    font-weight:bold;
-    width:100%;
-    margin-right:0.5em;
-    margin-bottom:3px;
 }
 
 hr{
@@ -39,32 +32,26 @@ p{
 
 /*MENU*/
 
-.menu{
-}
+
 .menu a{
+    text-align:center;
     font-family:Oswald;
     font-size:30px;
     color:white;
+    border:red solid 1px;
 }
 
-.menu hr{
-    margin:10 auto;
-}
 
-.title img{
-    display:inline-block;
-    height:100px;
-    width:100px;
-    position:relative;
-    top:10px;
-    
-}
+
 .title h1{
-    width: auto;
-    display:inline-block;
+    width:auto;
+    text-align: center;
     font-size:5em;
-    
+    border:purple solid 1px;
+
 }
+
+
 
 
 /*MENU DROP DOWN FORMAT*/
