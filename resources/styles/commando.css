@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    margin:0 20%;
+    padding:0;
+    box-sizing: border-box;
+    background-image:url(../images/main/test.jpg);
+    background-repeat:repeat-y;
+    background-size:cover;
+    border:red solid 1px;
+}
+
+
+h1, h2, h3{
+    display:inline-block;
+    font-family:Oswald;
+    color:white;
+    font-size:3em;
+    font-weight:bold;
+    width:100%;
+    margin-right:0.5em;
+    margin-bottom:3px;
+}
+
+hr{
+    background-color:white;
+}
+
+p{
+    display:block;
+    text-align:left;
+    margin:1em 0.25em;
+    font-family:Rajdhani;
+    color:white;
+    font-size:30px;
+}
+
+
+
+
+/*MENU*/
+
+.menu{
+}
+.menu a{
+    font-family:Oswald;
+    font-size:30px;
+    color:white;
+}
+
+.menu hr{
+    margin:10 auto;
+}
+
+.title img{
+    display:inline-block;
+    height:100px;
+    width:100px;
+    position:relative;
+    top:10px;
+    
+}
+.title h1{
+    width: auto;
+    display:inline-block;
+    font-size:5em;
+    
+}
+
+
+/*MENU DROP DOWN FORMAT*/
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    background:black;
+    z-index:1;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width:100%;
+}
+
+.dropdown-content a{
+    display:block;
+}
+
+.dropdown-content a:hover {
+    background-color: grey;
+}
+
+
+.dropdown:hover .dropdown-content{
+    display:block;
+
+}
+

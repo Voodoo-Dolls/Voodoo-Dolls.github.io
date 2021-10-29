@@ -134,6 +134,18 @@ table, th, td{
     color:white;
 }
 
+/*Skills Formatting*/
+.skills h1{
+    display:inline;
+    margin:0 auto;
+}
+.skills img{
+    height:10%;
+    width:10%;
+    display:inline-block;
+    margin:-1% auto;
+}
+
 /*Weapon Formating */
 .gun-image{
     float:right;
