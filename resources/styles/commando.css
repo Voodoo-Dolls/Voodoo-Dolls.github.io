@@ -5,7 +5,7 @@ body{
     background-image:url(../images/main/test.jpg);
     background-repeat:repeat-y;
     background-size:cover;
-    border:red solid 1px;
+
 }
 
 
@@ -32,24 +32,35 @@ p{
 
 /*MENU*/
 
+.menu{
+    display:block;
+    text-align: center;
+}
 
 .menu a{
-    text-align:center;
     font-family:Oswald;
     font-size:30px;
     color:white;
-    border:red solid 1px;
 }
-
 
 
 .title h1{
     width:auto;
     text-align: center;
     font-size:5em;
-    border:purple solid 1px;
 
 }
+.title img{
+    height:200px;
+    width:200px;
+    display: block;
+    border-radius: 50%;
+    margin-bottom:4em;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
 
 
 
@@ -59,19 +70,31 @@ p{
 .dropdown{
     position:relative;
     display:inline-block;
+
 }
+
 
 .dropdown-content{
     display: none;
-    background:black;
+    opacity:0;
+    background:purple;
     z-index:1;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width:100%;
+    border:1px red solid;
+    height:0px;
+    transition: opacity 1s ease-out;
+    
+    
+    
 }
+
+
 
 .dropdown-content a{
     display:block;
+    
 }
 
 .dropdown-content a:hover {
@@ -81,6 +104,7 @@ p{
 
 .dropdown:hover .dropdown-content{
     display:block;
+    opacity: 1;
 
 }
 
