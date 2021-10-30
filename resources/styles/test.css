@@ -1,4 +1,53 @@
-body{
+.dropdown{
+    display:inline-block;
+
+}
+
+.dropdown-content a{
+    display: none;
+
+}
+
+
+.dropdown:hover .dropdown-content a{
+    display:block;
+    opacity: 1;
+    animation-name: dropdown;
+    animation-duration: 1s;
+
+
+
+}
+@keyframes dropdown {
+    0%  {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
     margin:0 20%;
     padding:0;
     box-sizing: border-box;
@@ -31,7 +80,7 @@ p{
 
 
 /*MENU*/
-
+/*
 .menu{
     display:block;
     text-align: center;
@@ -66,7 +115,7 @@ p{
 
 
 /*MENU DROP DOWN FORMAT*/
-
+/*
 .dropdown{
     position:relative;
     display:inline-block;
@@ -76,10 +125,24 @@ p{
 
 .dropdown-content{
     display: none;
+    opacity:0;
     background:black;
+    z-index:1;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width:100%;
+    border:1px red solid;
+    transition: opacity 1s ease-out;
+    
+    
+    
+}
+
+
+
+.dropdown-content a{
+    display:block;
+    
 }
 
 .dropdown-content a:hover {
@@ -87,28 +150,10 @@ p{
 }
 
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display:block;
     opacity: 1;
-    animation-name: dropdown;
-    animation-duration: 1s;
-}
-
-
-.dropdown-content a{
-    display: none;
 
 }
 
-.dropdown:hover .dropdown-content a{
-    display:block;
-    opacity: 1;
-    animation-name: dropdown;
-    animation-duration: 1.5s;
-}
-
-@keyframes dropdown {
-    0%  {opacity:0;}
-    100% {opacity:1;}
-}
-
+*/
