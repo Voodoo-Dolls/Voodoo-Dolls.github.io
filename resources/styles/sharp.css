@@ -178,6 +178,9 @@ img.icon{
 .cwinchester{
     background-image: url(./../images/sharp/winchester-collapse.jpg)
 }
+.cmosin{
+    background-image: url(./../images/sharp/mosin-collapse.jpg)
+}
 .gun-section .collapsible{
     
     background-repeat: no-repeat;
@@ -237,4 +240,29 @@ img.icon{
     font-weight:bolder;
     font-size:30px;
     margin: 30px 0;
+  }
+
+  /*Skill Formating*/
+
+  .skills h1{
+      font-size:2em;
+  }
+
+  .skills ul{
+      list-style: none;
+      padding-left: 0;
+  }
+
+  /*Play Style*/
+
+  .playstyle h1, .playstyle h2{
+      font-size:2em;
+  }
+
+
+  /*Tips*/
+
+  .tip ul{
+      list-style: none;
+      padding-left: 0;
   }
