@@ -153,6 +153,7 @@ img.icon{
   }
 
   table,tr,th,td{
+    text-align: center;
     border:solid white 1px;
     padding:20px;
     border-collapse:collapse;
@@ -195,4 +196,18 @@ img.icon{
   .tip ul{
       list-style: none;
       padding-left: 0;
+  }
+
+  .tip p{
+      display:inline-block;
+      clear: all;
+  }
+
+  .tip h2{
+      display:inline-block;
+  }
+
+  .tip video{
+      display: block;
+      margin:1em 0;
   }

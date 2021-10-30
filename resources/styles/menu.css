@@ -4,6 +4,11 @@
 .menu{
     display:block;
     text-align: center;
+    background-color: black;
+}
+
+.menu hr{
+    margin: -0.1em 0;
 }
 
 .menu a{
@@ -11,6 +16,10 @@
     font-size:30px;
     color:white;
     text-decoration: none;
+}
+
+.menu a:hover {
+    background-color:blueviolet;
 }
 
 
