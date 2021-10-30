@@ -79,11 +79,25 @@
 
 }
 
+.dropdown-content img{
+    display:none;
+    height:1em;
+    width:1em;
+}
+
 .dropdown:hover .dropdown-content a{
-    display:block;
+    display:inline-block;
     opacity: 1;
     animation-name: dropdown;
     animation-duration: 1.5s;
+}
+
+.dropdown:hover .dropdown-content img{
+    display:inline-block;
+    opacity: 1;
+    animation-name: dropdown;
+    animation-duration: 1.5s;
+    
 }
 
 @keyframes dropdown {
