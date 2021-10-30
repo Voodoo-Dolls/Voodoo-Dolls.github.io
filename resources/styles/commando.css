@@ -3,9 +3,9 @@ body{
     padding:0;
     box-sizing: border-box;
     background-image:url(../images/main/test.jpg);
-    background-repeat:repeat-y;
     background-size:cover;
-
+    background-repeat:repeat-y;
+    background-position: center;
 }
 
 
@@ -21,10 +21,10 @@ hr{
 p{
     display:block;
     text-align:left;
-    margin:1em 0.25em;
+    margin:1em 0;
     font-family:Rajdhani;
     color:white;
-    font-size:30px;
+    font-size:1.8em;
 }
 
 
@@ -112,3 +112,26 @@ p{
     100% {opacity:1;}
 }
 
+/*Sharp Summary Format */
+
+#class{
+    display:inline-block;
+    font-size:4em;
+    margin-top:1em;
+    margin-bottom: -0.9em;
+
+}
+
+img.icon{
+    height:6em;
+    width:6em;
+    margin-bottom:-1.1em;
+}
+.pros-cons h3{
+    font-size:2em;
+}
+.pros-cons ul{
+    font-size:1.5em;
+    font-family:Rajdhani;
+    color:white;
+}
