@@ -94,10 +94,13 @@ img.icon{
 }
 
 .cwinchester{
-    background-image: url(./../images/sharp/winchester-collapse.jpg)
+    background-image: url(./../images/sharp/winchester-collapse.jpg);
 }
 .cmosin{
-    background-image: url(./../images/sharp/mosin-collapse.jpg)
+    background-image: url(./../images/sharp/mosin-collapse.jpg);
+}
+.cfreeze{
+    background-image: url(./../images/sharp/freeze-collapse.jpg);
 }
 .gun-section .collapsible{
     
@@ -163,7 +166,16 @@ img.icon{
   /*Skill Formating*/
 
   .skills h1{
+      display: inline-block;
       font-size:2em;
+      margin-bottom: -1.8em;
+      margin-top: 1em;
+  }
+
+  .skills img{
+      height:4em;
+      width:4em;
+      margin-bottom:-1em;  
   }
 
   .skills ul{
