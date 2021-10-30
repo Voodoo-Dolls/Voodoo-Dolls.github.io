@@ -91,7 +91,149 @@
             </div>
         </div>
     </div>
-    
+
+
+
+    <!--This will contain weapons and STK-->
+    <div class='container gun-section'>
+        <h1 class='weapons'>Weapons (WIP)</h1>
+        <img id='gun-icon' src='./resources/images/main/weapon-icon.png'>
+        <hr>
+        <!--M14 Collapse-->
+        <button type="button" class="collapsible cm14">&#9776</button>
+        <div class='content'>
+            <div class='gun m14'>
+                <h2>M14</h2>
+                <img class='gun-image' src='./resources/images/sharp/m14.jpg'>
+                <p class='gun-text'>
+                    A very well rounded weapon that can deal with trash and larges fairly well.
+                    Can decap rioters in a single shot and two tap bloats and husks.
+                </p>
+
+                <table>
+                    <h3 class='table-heading'>W/O Medic Buffs</h3>
+                    <tr>
+                        <th>Tier</th>
+                        <th>Scrakes</th>
+                        <th>Fleshpounds</th>
+                    </tr>
+                    <tr>
+                        <td>Base</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                    <tr>
+                        <td>+1</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <h3 class='table-heading'>W/ Medic Buffs</h3>
+                    <tr>
+                        <th>Tier</th>
+                        <th>Scrakes</th>
+                        <th>Fleshpounds</th>
+                    </tr>
+                    <tr>
+                        <td>Base</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                    <tr>
+                        <td>+1</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--SPX Collapse-->
+        <button type="button" class="collapsible cspx">&#9776</button>
+        <div class='content'>
+            <div class='gun spx'>
+                <h2>SPX</h2>
+                <img class='gun-image' src='./resources/images/sharp/spx.jpg'>
+                <p class='gun-text'>
+                    A very powerful, but also a low recoil weapon. Offers insane dps at the cost of reload speed.
+                    This weapon will absolutely destroy larges in the right hands.
+                </p>
+                <table>
+                    <h3 class='table-heading'>W/O Medic Buffs</h3>
+                    <tr>
+                        <th>Tier</th>
+                        <th>Scrakes</th>
+                        <th>Fleshpounds</th>
+                    </tr>
+                    <tr>
+                        <td>Base</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                    <tr>
+                        <td>+1</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                </table>
+                <table>
+                    <h3 class='table-heading'>W/ Medic Buffs</h3>
+                    <tr>
+                        <th>Tier</th>
+                        <th>Scrakes</th>
+                        <th>Fleshpounds</th>
+                    </tr>
+                    <tr>
+                        <td>Base</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                    <tr>
+                        <td>+1</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                    <tr>
+                        <td>+2</td>
+                        <td>Shots to Kill</td>
+                        <td>Shots to kill</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Java script for collapse-->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
 
 
 

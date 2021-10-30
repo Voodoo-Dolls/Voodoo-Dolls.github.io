@@ -134,4 +134,54 @@ img.icon{
     font-size:1.5em;
     font-family:Rajdhani;
     color:white;
+    padding-left: 1em;
 }
+
+
+/*Weapon Formating */
+.gun-image{
+    float:right;
+    margin-left:50px;
+}
+.gun-text{
+    position: relative;
+    right:8px;
+}
+
+.gun h2{
+    margin-top:1em;
+}
+
+/*Data for collapse*/
+.cm14{
+    background-image: url(./../images/sharp/m14-collapse.jpg);
+}
+.cspx{
+    background-image: url(./../images/sharp/spx-collapse.jpg);
+}
+.gun-section .collapsible{
+    
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-color: white;
+    background-position: left;
+    background-position-y: center;
+    cursor: pointer;
+    width: 100%;
+    padding-bottom:5%;
+    max-height: 1.5em;
+    font-size:40px;
+    text-align: right;
+    line-height: 1.37;
+  }
+  
+  .active, .collapsible:hover {
+    color:red;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
