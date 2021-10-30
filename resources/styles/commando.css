@@ -171,11 +171,18 @@ img.icon{
 .cspx{
     background-image: url(./../images/sharp/spx-collapse.jpg);
 }
+.cfal{
+    background-image: url(./../images/sharp/fal-collapse.jpg);
+}
+
+.cwinchester{
+    background-image: url(./../images/sharp/winchester-collapse.jpg)
+}
 .gun-section .collapsible{
     
     background-repeat: no-repeat;
     background-size:auto;
-    background-color: white;
+    background-color:rgb(100, 96, 100);
     background-position: left;
     background-position-y: center;
     cursor: pointer;
@@ -185,6 +192,7 @@ img.icon{
     font-size:40px;
     text-align: right;
     line-height: 1.37;
+    color:white;
   }
   
   .active, .collapsible:hover {
