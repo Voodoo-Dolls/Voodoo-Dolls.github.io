@@ -1,0 +1,30 @@
+body{
+    margin:0 20%;
+    padding:0;
+    box-sizing: border-box;
+    background-image:url(../images/main/test.jpg);
+    background-size:cover;
+    background-repeat:no-repeat-x;
+    /*background-repeat:repeat-y;*/
+    background-position: fixed;
+}
+
+
+h1, h2, h3{
+    font-family:Oswald;
+    color:white;
+}
+
+hr{
+    background-color:white;
+}
+
+p{
+    display:block;
+    text-align:left;
+    margin:1em 0;
+    font-family:Rajdhani;
+    color:white;
+    font-size:1.8em;
+}
+

@@ -12,350 +12,57 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Oswald&family=Rajdhani:wght@300&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap"
         rel="stylesheet">
-    <link href='./resources/styles/styles.css' rel='stylesheet'>
+    <link href='./resources/styles/home.css' rel='stylesheet'>
+    <link href="./resources/styles/menu.css" rel='stylesheet'>
 </head>
+
+
 
 <body>
 
-    <!--This will have basic banner + nav-->
+
+    <!--This is the MENU-->
     <div class='container'>
         <div class='banner'>
             <div class='title'>
                 <h1>Voodoo Doll's CD Guide</h1>
-                <img src='./resources/images/main/cd-icon.jpg'>
+                <img src="./resources/images/main/profile.jpg">
             </div>
+            <hr>
             <div class='menu'>
-                <a>HOME/</a>
+                <a href=index.html>HOME/</a>
                 <div class='dropdown'>
                     <a>PRECISION PERKS/<a>
                             <div class='dropdown-content'>
-                                <a href='#'>Sharpshooter<br></a>
-                                <a href='#'>Gunslinger<br></a>
+                                <a href='./page/sharp.html'>Sharpshooter</a>
+                                <a href='#'>Gunslinger</a>
                                 <a href='#'>Commmando<br></a>
                                 <a href='#'>Swat<br></a>
                                 <a href='#'>Support<br></a>
                                 <a href='#'>Medic<br></a>
                             </div>
                 </div>
-                <a>CHAOS PERKS/</a>
+                <div class='dropdown'>
+                    <a>CHAOS PERKS/</a>
+                    <div class='dropdown-content'>
+                        <a href='#'>Demo</a>
+                        <a href='#'>Firebug</a>
+                        <a href='#'>Beserker</a>
+                        <a href='#'>Survivalist</a>
+                    </div>
+                </div>
                 <a>SPECIAL THANKS</a>
             </div>
         </div>
-    </div>
-
-
-
-    <!--Class Title + Summary-->
-    <div class='container'>
-        <div class='summary'>
-            <h1 id='class'>Sharpshooter</h1>
-            <img class='icon' src='./resources/images/sharp/sharp-icon.png'>
-            <hr>
-            <p>
-                Sharpshooter is one of the precision perks offered in Killing Floor 2.
-                Sharpshooters excel greatly in killing larges and they can hold their
-                own when it comes to trash.
-            </p>
-        </div>
-        <div class='pros-cons'>
-            <div class='pros'>
-                <h3>+ Pros</h3>
-                <ul>
-                    <li>One of the highest damaging Perks in the game</li>
-                    <li>Only perk in the game that can kill 2 fleshpounds without reloading</li>
-                    <li>Their lvl. 25 skill can help trigger Zedtime with every headshot</li>
-                    <li>Very little recoil</li>
-                    <li>Very high weapon switch speed</li>
-                    <li>Cryogrenades offers huge CC ability</li>
-                </ul>
-            </div>
-            <div class='cons'>
-                <h3>- Cons</h3>
-                <ul>
-                    <li>Suffers from long reloads</li>
-                    <li>Slow Movement</li>
-                    <li>Constantly in a crouched position</li>
-                    <li>Slow firerate during Zedtime</li>
-                    <li>Has to be really accurate</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--This will contain weapons and STK-->
-    <div class='container gun-section'>
-        <h1 class='weapons'>Weapons (WIP)</h1>
-        <img id='gun-icon' src='./resources/images/main/weapon-icon.png'>
         <hr>
-        <!--M14 Collapse-->
-        <button type="button" class="collapsible cm14">&#9776</button>
-        <div class='content'>
-            <div class='gun m14'>
-                <h2>M14</h2>
-                <img class='gun-image' src='./resources/images/sharp/m14.jpg'>
-                <p class='gun-text'>
-                    A very well rounded weapon that can deal with trash and larges fairly well.
-                    Can decap rioters in a single shot and two tap bloats and husks.
-                </p>
-
-                <table>
-                    <h3 class='table-heading'>W/O Medic Buffs</h3>
-                    <tr>
-                        <th>Tier</th>
-                        <th>Scrakes</th>
-                        <th>Fleshpounds</th>
-                    </tr>
-                    <tr>
-                        <td>Base</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                    <tr>
-                        <td>+1</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                </table>
-
-                <table>
-                    <h3 class='table-heading'>W/ Medic Buffs</h3>
-                    <tr>
-                        <th>Tier</th>
-                        <th>Scrakes</th>
-                        <th>Fleshpounds</th>
-                    </tr>
-                    <tr>
-                        <td>Base</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                    <tr>
-                        <td>+1</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <!--SPX Collapse-->
-        <button type="button" class="collapsible cspx">&#9776</button>
-        <div class='content'>
-            <div class='gun spx'>
-                <h2>SPX</h2>
-                <img class='gun-image' src='./resources/images/sharp/spx.jpg'>
-                <p class='gun-text'>
-                    A very powerful, but also a low recoil weapon. Offers insane dps at the cost of reload speed.
-                    This weapon will absolutely destroy larges in the right hands.
-                </p>
-                <table>
-                    <h3 class='table-heading'>W/O Medic Buffs</h3>
-                    <tr>
-                        <th>Tier</th>
-                        <th>Scrakes</th>
-                        <th>Fleshpounds</th>
-                    </tr>
-                    <tr>
-                        <td>Base</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                    <tr>
-                        <td>+1</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                    <tr>
-                        <td>+2</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                </table>
-                <table>
-                    <h3 class='table-heading'>W/ Medic Buffs</h3>
-                    <tr>
-                        <th>Tier</th>
-                        <th>Scrakes</th>
-                        <th>Fleshpounds</th>
-                    </tr>
-                    <tr>
-                        <td>Base</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                    <tr>
-                        <td>+1</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                    <tr>
-                        <td>+2</td>
-                        <td>Shots to Kill</td>
-                        <td>Shots to kill</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
     </div>
 
-    <!--This will contain Skill Selection-->
     <div class='container'>
-        <div class='skills'>
-            <h1>Skill Selection</h1>
-            <img src='./resources/images/main/skills.png'>
-            <hr>
-            <p>
-                These are the skills you want to run for optimal
-                play 99% of the time.
-            </p>
-            <ul>
-                <li>
-                    <h2>Level 5: Marksman</h2>
-                    <p>
-
-                    </p>
-                </li>
-                <li>
-                    <h2>Level 10: Stability</h2>
-                    <p>
-
-                    </p>
-                </li>
-                <li>
-                    <h2>Level 15: Rack em Up</h2>
-                    <p>
-
-                    </p>
-                </li>
-                <li>
-                    <h2>Level 20: Always Prepared</h2>
-                    <p></p>
-                </li>
-                <li>
-                    <h2>Level 25: Depends!</h2>
-                    <p>
-
-                    </p>
-                </li>
-
-            </ul>
-        </div>
+        <h1>Hi There!</h1>
+        <p>
+            This is just a place holder. Only link working in Sharpshooter.
+        </p>
     </div>
-
-
-
-    <!--This willl contain the strategy/playstyle-->
-    <div class='container'>
-        <article>
-            <h1>Playstyle</h1>
-            <hr>
-            <div class='playstyle-intro'>
-                <p>
-                    Sharpshooter's in general wanna be aiming for the head in general;
-                    due to their damage bonus and Zed time activation chance. However,
-                    many CD sharpshooters fall in the range of two playstlyes:
-                    <span style='font-weight:bold;'>Big Zed Hunter</span> or
-                    <span style='font-weight:bold;'>Headclicker</span>. Both of these
-                    playstyles typically use the same loadout (M14 or FAL with a SPX)
-                    but, utilize a certain weapon more than the other. A good sharpshooter
-                    should be to swtich between these playstyles depending on the situation.
-                </p>
-            </div>
-            <div class='big-zed-hunter'>
-                <h2>Big Zed Hunter</h2>
-                <p>
-                    The Big Zed Hunter as the name suggests, their primary goal is to huntdown
-                    big priority targets such as Scrakes, Fleshpounds, and Husks. Big Zed hunters
-                    typically wield a SPX since it decap any mediums, but also take out Fleshpounds
-                    before they start moving (great for far range takedowns). Great style to use
-                    when laned with a trash killer.
-
-                </p>
-            </div>
-            <div class='head-clicker'>
-                <h2>Headclicker</h2>
-                <p class='headclicker'>
-                    The Headclicker playstyle is the more common and useful playstyle (for the most part).
-                    They primarily wield the M14 or FAL and get headshots on anything. Big major benefit of this
-                    playstyle
-                    is that it has a huge increase in headshots compared to the Big Zed Hunter. This allows zed time to
-                    trigger
-                    more often, creating opportunities for the team. The playstyle is flexible in any situation.
-                    Whether its' a solo lane or not, the M14 or FAL can handle trash and larges very effectively.
-                </p>
-            </div>
-        </article>
-    </div>
-
-
-    <!--Tips & Tricks-->
-    <div class=container>
-        <h1>Tips & Tricks</h1>
-        <hr>
-        <div class='tip'>
-            <uL>
-                <li>
-                    <h2>Freeze into double FP takedown</h2>
-                    <p>
-                        One of the strongest attacks you can make with
-                        sharpshooter is to freeze a group of fleshpounds,
-                        then quickly dispatch two fleshpounds with the SPX +2.
-                    </p>
-                    <video width='320' height='240' controls>
-                        <source src='./resources/videos/placeholder.mp4' type='video/mp4'>
-                    </video>
-                </li>
-                <li>
-                    <h2>Use Your Spares!</h2>
-                    <p>
-                        One of the biggest disadvantages of sharpshooter would
-                        be their slow reload speeds with tube fed weapons. A 
-                        way to be really agressive in a lane would be to 
-                        simply pick up another spare to reload A.K.A 'V-Loading'.
-                    </p>
-                </li>
-                <li>
-                    <h2>Over-capping</h2>
-                    <p>
-                        One neat trick you can do for Sharpshooter is over-capping!
-                        What overcapping does, it allows you to have the ammo benefits
-                        of Always Prepared, and the extra damage from Dead Eye. In order
-                        to preform the trick, you need to equip Always Prepared, fill up
-                        your weapons, drop all your weapons on the ground, then switch to
-                        dead eye. Once you pick up your weapons again, you'll notice that
-                        you will retain the ammo bonus but still have dead eye equipped.
-                        <br> <br>
-                         <span style='font-style:italic;'>Note: Touching any ammo box will reset any ammo above the default.</span>
-
-                    </p>
-                </li>
-            </uL>
-        </div>
-    </div>
-
-
-
-
-
-    <!--Java script for collapse-->
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
 
 </body>
 
