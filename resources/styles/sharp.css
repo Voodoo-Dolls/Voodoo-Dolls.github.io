@@ -192,9 +192,18 @@ img.icon{
 
   /*Play Style*/
 
-  .playstyle h1, .playstyle h2{
+  .playstyle h1, .playstyle h2, .playstyle p{
       font-size:2em;
   }
+
+  .playstyle ul{
+      font-family:Rajdhani;
+      font-weight: bold;
+      color:white;
+
+  }
+
+
 
 
   /*Tips*/
