@@ -76,17 +76,21 @@
 
 .dropdown-content a{
     display: none;
+    font-size: 1.8em;
+    text-align: left;
+    margin:auto auto;
 
 }
 
 .dropdown-content img{
     display:none;
-    height:1em;
-    width:1em;
+    height:40px;
+    width:40px;
+    float:left;
 }
 
 .dropdown:hover .dropdown-content a{
-    display:inline-block;
+    display:block;
     opacity: 1;
     animation-name: dropdown;
     animation-duration: 1.5s;
