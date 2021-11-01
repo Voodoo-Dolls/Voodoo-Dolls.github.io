@@ -233,9 +233,28 @@ img.icon{
       margin-left:1em;
   }
 
+  .loadout p, .loadout h2{
+      font-size:2em;
+  }
+
 
 
   /*Tips*/
+
+  .tip h1{
+      display: inline-block;
+      margin-bottom:-1em;
+  }
+
+  .tip h2{
+      margin-bottom:-1em;
+      font-size:2em;
+  }
+  .tip img{
+      height:4em;
+      width:3.5em;
+      margin-left:0.5em;
+  }
 
   .tip ul{
       list-style: none;
