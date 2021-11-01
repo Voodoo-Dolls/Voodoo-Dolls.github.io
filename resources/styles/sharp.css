@@ -194,15 +194,44 @@ img.icon{
 
   .playstyle h1, .playstyle h2, .playstyle p{
       font-size:2em;
+      
+  }
+  .playstyle img{
+      display: inline-block;
+      height:5em;
+      width:5em;
+      margin-left: 0.5em;
+      margin-bottom:-0.5em;
+  }
+  .playstyle h1{
+      display:inline-block;
+      margin-bottom:-1.8em;
   }
 
-  .playstyle ul{
+  .playstyle li, .head-clicker li{
       font-family:Rajdhani;
       font-weight: bold;
       color:white;
+      font-size:2em;
 
   }
 
+  .big-zed-hunter p{
+
+
+  }
+
+  /*Loadout*/
+  .loadout h1{
+      display:inline-block;
+      margin-bottom:-2em;
+  }
+
+  .loadout img{
+      height:4em;
+      width:3.7em;
+      margin-left:1em;
+  }
 
 
 
