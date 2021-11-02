@@ -28,7 +28,10 @@ p{
     font-size:1.8em;
 }
 
-
+.link{
+    color: yellow;
+    font-weight: bold;
+}
 
 
 /*Sharp Summary Format */
@@ -98,6 +101,23 @@ img.icon{
 }
 .cmosin{
     background-image: url(./../images/sharp/mosin-collapse.jpg);
+}
+.ccrossbow{
+    background-image: url(./../images/sharp/crossbow-collapse.jpg);
+}
+.cbow{
+    background-image: url(./../images/sharp/bow-collapse.jpg);
+}
+.c1858{
+    background-image: url(./../images/sharp/1858-collapse.jpg);
+}
+
+.c500{
+    background-image: url(./../images/sharp/500-collapse.jpg);
+}
+
+.c9mm{
+    background-image: url(./../images/sharp/9mm-collapse.jpg);
 }
 .cfreeze{
     background-image: url(./../images/sharp/freeze-collapse.jpg);
@@ -181,7 +201,9 @@ img.icon{
 
   .skills img{
       height:2em;
-      width:2em;  
+      width:2em;
+      margin-right:0.5em; 
+      margin-bottom:-0.5em; 
   }
 
 
@@ -198,7 +220,7 @@ img.icon{
   }
   .playstyle img{
       display: inline-block;
-      height:5em;
+      height:auto;
       width:5em;
       margin-left: 0.5em;
       margin-bottom:-0.5em;
