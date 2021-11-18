@@ -15,7 +15,6 @@ body{
 
 article{
     margin: 50px 0;
-    border:purple solid 1px;
 }
 
 .class-summary{
@@ -54,19 +53,23 @@ article{
 
 .gun{
     border:white 2px solid;
-  
+    position:relative;
+    background-color: black;
 }
+
+
 
 .gun h3{
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .gun img{
     display:block;
     margin:10px auto;
     width:90%;
-    min-height:auto;
-    max-height:20%;
+    height:auto;
     overflow: hidden;
     
 }
@@ -80,7 +83,27 @@ article{
 }
 
 .gun-content{
-    width:30%;
-
+    display:none;
 }
 
+.container{
+
+    width:100%;
+    height:1px;
+    background:red;
+}
+
+.gun:hover .gun-content{
+    border: white 2px solid;
+    border-top: none;
+    display:block;
+    position:absolute;
+    background-color: black;
+    width:100%;
+    z-index: 1;
+    margin:0 -2px;
+}
+
+.gun:hover .gun{
+    border-bottom: none;
+}
