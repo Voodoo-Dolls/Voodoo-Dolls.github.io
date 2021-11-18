@@ -2,11 +2,12 @@ body{
     margin:0 20%;
     padding:0;
     box-sizing: border-box;
-    background-image:url(../images/main/test.jpg);
-    background-size:contain;
-    background-repeat:no-repeat-x;
-    /*background-repeat:repeat-y;*/
-    background-position: fixed;
+    background-image:url(../images/main/background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+   
 }
 
 

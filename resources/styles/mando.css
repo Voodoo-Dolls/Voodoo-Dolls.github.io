@@ -1,0 +1,86 @@
+body{
+    margin:0 20%;
+    padding:0;
+    box-sizing: border-box;
+    background-image:url(../images/main/background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    color:white;
+   
+}
+
+/*General Formating */
+
+article{
+    margin: 50px 0;
+    border:purple solid 1px;
+}
+
+.class-summary{
+
+}
+
+/*Class Summary*/
+
+.pros-cons{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-gap:20px;
+    
+}
+
+.pros-class, .cons-class{
+    border:white 2px solid;
+}
+
+.pros-class h3, .cons-class h3 {
+    text-align: center;
+}
+
+
+/*Weapons*/
+
+.grid{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width:100%;
+
+}
+
+.gun{
+    border:white 2px solid;
+  
+}
+
+.gun h3{
+    text-align: center;
+}
+
+.gun img{
+    display:block;
+    margin:10px auto;
+    width:90%;
+    min-height:auto;
+    max-height:20%;
+    overflow: hidden;
+    
+}
+
+.rating{
+    text-align: center;
+}
+
+.rating p{
+    margin-top:-15px;
+}
+
+.gun-content{
+    width:30%;
+
+}
+
