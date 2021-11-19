@@ -17,8 +17,16 @@ article{
     margin: 50px 0;
 }
 
-.class-summary{
+ul{
+    list-style: none;
+}
 
+.pros{
+    color:green;
+}
+
+.cons{
+    color:red;
 }
 
 /*Class Summary*/
@@ -57,12 +65,9 @@ article{
     background-color: black;
 }
 
-
-
 .gun h3{
     text-align: center;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .gun img{
@@ -70,7 +75,6 @@ article{
     margin:10px auto;
     width:90%;
     height:auto;
-    overflow: hidden;
     
 }
 
@@ -86,6 +90,14 @@ article{
     display:none;
 }
 
+.gun-content p{
+    margin:0 20px;
+}
+
+.gun-content li{
+    margin-left:-20px;
+}
+
 .container{
 
     width:100%;
@@ -94,7 +106,7 @@ article{
 }
 
 .gun:hover .gun-content{
-    border: white 2px solid;
+    border: gold 2px solid;
     border-top: none;
     display:block;
     position:absolute;
@@ -104,6 +116,9 @@ article{
     margin:0 -2px;
 }
 
-.gun:hover .gun{
+.gun:hover{
+    border-color: gold;
     border-bottom: none;
 }
+
+/*@media*/
