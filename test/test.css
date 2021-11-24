@@ -1,5 +1,5 @@
 body{
-    margin:0 20%;
+    margin:0 18%;
     padding:0;
     box-sizing: border-box;
     background-image:url(../resources/images/main/test.jpg);
@@ -8,10 +8,38 @@ body{
     background-position: top;
     color:white;
 }
+.banner{
+    display:flex;
+    align-items: center;
 
-.logo{
+}
+.logo-container{
+    position:relative;
     width:250px;
     height:250px;
+}
+
+.logo{
+    position:absolute;
+    width:250px;
+    height:250px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back{
+    transform:rotateY(-180deg);
+}
+
+.logo-container:hover .front{
+    transform:rotateY(180deg)
+}
+
+.logo-container:hover .back{
+    transform:rotateY(0deg);
 }
 
 h1{
@@ -19,10 +47,7 @@ h1{
     font-size:3.5em;
 }
 
-.logo-container{
-    display:flex;
-    align-items: center;
-}
+
 
 .nav-container{
     text-align: center;
@@ -41,8 +66,14 @@ h1{
 .hover{
     display: inline-block;
     position: relative;
-    color:white;
+    color:rgba(255, 255, 255, 0.75);
   }
+
+.hover:hover{
+    color:white;
+    background-color: rgba(170, 170, 170, 0.15);
+}
+
 
 .hover:after {
     content: '';
