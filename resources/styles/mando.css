@@ -50,7 +50,7 @@ ul{
 .gun{
     border:white 2px solid;
     position:relative;
-    background-image:linear-gradient(rgba(45, 202, 230, 0.473),rgba(151, 4, 248, 0.664));
+    background-color:black;
 }
 
 .gun h3{
@@ -103,7 +103,7 @@ ul{
     border-top: none;
     display:block;
     position:absolute;
-    background-image:linear-gradient(rgba(150, 4, 248, 0.726),rgba(45, 202, 230, 0.671));
+    background-color:black;
     width:100%;
     z-index: 1;
     margin:0 -2px;
