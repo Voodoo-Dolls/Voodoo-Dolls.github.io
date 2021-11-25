@@ -1,13 +1,15 @@
+/* General Formating */
 body{
     margin:0 18%;
     padding:0;
     box-sizing: border-box;
     background-image:url(../resources/images/main/test.jpg);
     background-size:auto;
-    /*background-repeat:repeat-y;*/
-    background-position: top;
+    background-position:top;
     color:white;
 }
+
+/* Title + Logo Flipping */
 .banner{
     display:flex;
     align-items: center;
@@ -49,6 +51,7 @@ h1{
 
 
 
+/* Links */
 .nav-container{
     text-align: center;
     margin-top: 20px;
@@ -71,7 +74,6 @@ h1{
 
 .hover:hover{
     color:white;
-    background-color: rgba(170, 170, 170, 0.15);
 }
 
 
@@ -83,7 +85,7 @@ h1{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(171, 0, 250, 0.767);
+    background-image:linear-gradient(to right, rgb(218, 123, 226), rgb(9, 214, 250));
     transform-origin: bottom right;
     transition: transform 0.30s ease-out;
 }
@@ -91,4 +93,49 @@ h1{
   .hover:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/*Dropdown Menu*/
+
+.perks{
+    position: relative;
+}
+
+.dropdown-content{
+    display:none;
+}
+.perks:hover .dropdown-content{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image:linear-gradient(rgb(82, 35, 92), rgb(31, 108, 196));
+    animation-name: dropdown;
+    animation-duration:1.5s;
+}
+.dropdown-content img{
+    height:40px;
+    width:40px;
+    float: left;
+}
+
+.dropdown-content a{
+    color:white;
+    width: 100%;
+    line-height: 40px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    background-color: rgba(40, 10, 78, 0.575);
+}
+.perks:hover .dropdown-content{
+}
+
+@keyframes dropdown {
+    0%  {opacity:0;}
+    100% {opacity:1;}
 }
