@@ -1,107 +1,143 @@
+/* General Formating */
+body{
+    margin:0 18%;
+    padding:0;
+    box-sizing: border-box;
+    background-image:url(../images/main/test.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-/*MENU*/
-
-.menu{
-    display:block;
-    text-align: center;
-    background-color: black;
-}
-
-.menu hr{
-    margin: -0.1em 0;
-}
-
-.menu a{
-    font-family:Oswald;
-    font-size:30px;
     color:white;
+}
+
+/* Title + Logo Flipping */
+.banner{
+    display:flex;
+    align-items: center;
+
+}
+.logo-container{
+    position:relative;
+    width:250px;
+    height:250px;
+}
+
+.logo{
+    position:absolute;
+    width:250px;
+    height:250px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back{
+    transform:rotateY(-180deg);
+}
+
+.logo-container:hover .front{
+    transform:rotateY(180deg)
+}
+
+.logo-container:hover .back{
+    transform:rotateY(0deg);
+}
+
+h1{
+    text-align: center;
+    font-size:3.5em;
+}
+
+
+
+/* Links */
+.nav-container{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items:center;
+}
+
+.nav-container a{
     text-decoration: none;
 }
 
-.menu a:hover {
-    background-color:blueviolet;
+.hover{
+    font-size:1.5em;
 }
 
 
-.title h1{
-    width:auto;
-    text-align: center;
-    font-size:5em;
+.hover{
+    display: inline-block;
+    position: relative;
+    color:rgba(255, 255, 255, 0.75);
+  }
 
-}
-.title img{
-    height:200px;
-    width:200px;
-    display: block;
-    border-radius: 50%;
-    margin-bottom:4em;
-    margin-left:auto;
-    margin-right:auto;
-    
+.hover:hover{
+    color:white;
 }
 
 
-
-
-
-/*MENU DROP DOWN FORMAT*/
-
-.dropdown{
-    position:relative;
-    display:inline-block;
-
+.hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-image:linear-gradient(to right, rgb(218, 123, 226), rgb(9, 214, 250));
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
 }
 
+  .hover:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*Dropdown Menu*/
+
+.perks{
+    position: relative;
+}
 
 .dropdown-content{
-    display: none;
-    background:black;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width:100%;
-}
-
-.dropdown-content a:hover {
-    background-color: grey;
-}
-
-
-.dropdown:hover .dropdown-content {
-    display:block;
-    opacity: 1;
-    animation-name: dropdown;
-    animation-duration: 1s;
-}
-
-
-.dropdown-content a{
-    display: none;
-    font-size: 1.8em;
-    text-align: left;
-    margin:auto auto;
-
-}
-
-.dropdown-content img{
     display:none;
+}
+.perks:hover .dropdown-content{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image:linear-gradient(rgb(82, 35, 92), rgb(31, 108, 196));
+    animation-name: dropdown;
+    animation-duration:1.5s;
+}
+.dropdown-content img{
     height:40px;
     width:40px;
-    float:left;
+    float: left;
 }
 
-.dropdown:hover .dropdown-content a{
-    display:block;
-    opacity: 1;
-    animation-name: dropdown;
-    animation-duration: 1.5s;
+.dropdown-content a{
+    color:white;
+    width: 100%;
+    line-height: 40px;
+    text-align: left;
+    text-decoration: none;
 }
 
-.dropdown:hover .dropdown-content img{
-    display:inline-block;
-    opacity: 1;
-    animation-name: dropdown;
-    animation-duration: 1.5s;
-    
+.dropdown-content a:hover{
+    background-color: rgba(40, 10, 78, 0.575);
+}
+.perks:hover .dropdown-content{
 }
 
 @keyframes dropdown {
