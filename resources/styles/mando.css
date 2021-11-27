@@ -20,6 +20,7 @@ h2{
 
 }
 
+
 .pros{
     color:green;
 }
@@ -43,10 +44,19 @@ h2{
     grid-gap:20px;
     
 }
-
 .pros-class, .cons-class{
-    border:white 2px solid;
+    border: 2px solid;
+    background-color: rgba(0, 0, 0, 0.404);
 }
+.pros-class{
+    border-color: rgba(0, 128, 0, 0.466);
+}
+
+.cons-class{
+    border-color:rgba(255, 0, 0, 0.507);
+}
+
+
 
 .pros-class h3, .cons-class h3 {
     text-align: center;
@@ -148,3 +158,56 @@ h2{
 
 
 /*@media*/
+
+
+/*Skill Formating*/
+
+.skill-menu{
+
+}
+
+.skill-title{
+    text-align: center;
+    border:red solid 1px;
+}
+
+.skill-name{
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.skill-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap:10px;
+}
+
+.skill-img{
+    vertical-align: middle;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+._10, ._15, ._20, ._25{
+    display:none;
+}
+
+.left-skills{
+    grid-column: 1 / span  2;
+    border: red solid 1px;
+    width: 100%;
+    text-align: right;
+}
+
+.left-skills h3{
+    width:100%;
+
+}
+
+.right-skills{
+    grid-column: 3 / span 2;
+    border:red solid 1px;
+    width:100%;
+}
