@@ -32,7 +32,7 @@ h2{
 .line{ 
     margin-top: -10px;
     margin-bottom:20px;
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.568),gray,black);
+    background-image: linear-gradient(to right,rgb(75, 14, 189),rgb(180, 14, 166),rgb(5, 129, 151));
     height:2px;
 }
 /*Class Summary*/
@@ -50,10 +50,12 @@ h2{
 }
 .pros-class{
     border-color: rgba(0, 128, 0, 0.466);
+    background-color:rgba(18, 58, 18, 0.247) ;
 }
 
 .cons-class{
     border-color:rgba(255, 0, 0, 0.507);
+    background-color:rgba(66, 4, 4, 0.13); ;
 }
 
 
@@ -145,7 +147,7 @@ h2{
     border-top: none;
     display:block;
     position:absolute;
-    background-color:rgba(0, 0, 0, 0.70);
+    background-color:rgba(0, 0, 0, 0.76);
     width:100%;
     z-index: 1;
     margin:0 -2px;
@@ -168,9 +170,11 @@ h2{
 
 .skill-title{
     text-align: center;
-    border:red solid 1px;
 }
 
+.skill-title h2{
+    background-image: none;
+}
 .skill-name{
     margin-left:5px;
     margin-right:5px;
@@ -184,10 +188,18 @@ h2{
     grid-gap:10px;
 }
 
+.skill-details{
+    display:flex;
+    align-items:center;
+}
+
 .skill-img{
+    position: relative;
     vertical-align: middle;
     margin-left:5px;
     margin-right:5px;
+    height: 64px;
+    width:64px;
 }
 
 ._10, ._15, ._20, ._25{
@@ -196,18 +208,22 @@ h2{
 
 .left-skills{
     grid-column: 1 / span  2;
-    border: red solid 1px;
+    border: rgb(255, 255, 255) solid 1px;
     width: 100%;
     text-align: right;
 }
 
-.left-skills h3{
-    width:100%;
-
+.left-skills .skill-details{
+    justify-content: flex-end;
 }
 
 .right-skills{
     grid-column: 3 / span 2;
-    border:red solid 1px;
+    border:rgb(255, 255, 255) solid 1px;
     width:100%;
+}
+
+.right-skills img{
+    order:-1;
+    align-self: center;
 }
