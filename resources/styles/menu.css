@@ -12,6 +12,41 @@ body{
     color:white;
 }
 
+h1, h2, h3, a{
+    font-family: 'Oswald', sans-serif;
+}
+
+p, li{
+    font-family: 'Oswald', sans-serif;
+}
+article{
+    margin: 50px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    background-image: linear-gradient(to right,rgba(75, 14, 189, 0.514),rgba(180, 14, 166, 0.534),rgba(5, 129, 151, 0.315));
+
+}
+
+
+.pros{
+    color:green;
+}
+
+.cons{
+    color:red;
+}
+
+.line{ 
+    margin-top: -10px;
+    margin-bottom:20px;
+    background-image: linear-gradient(to right,rgb(75, 14, 189),rgb(180, 14, 166),rgb(5, 129, 151));
+    height:2px;
+}
 /* Title + Logo Flipping */
 .banner{
     display:flex;
