@@ -11,6 +11,10 @@ body{
 
     color:white;
 }
+h2{
+    text-align: justify;
+    font-size:1.8em;
+}
 
 h1, h2, h3, a{
     font-family: 'Oswald', sans-serif;
