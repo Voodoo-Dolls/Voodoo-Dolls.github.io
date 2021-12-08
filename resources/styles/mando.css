@@ -180,10 +180,10 @@
     width:64px;
 }
 
-/*._10, ._15, ._20, ._25{
+._10, ._15, ._20, ._25{
     display:none;
 }
-*/
+
 
 .left-skills{
     grid-column: 1 / span  2;
@@ -214,4 +214,17 @@
     background-color:rgba(3, 3, 165, 0.301);
 }
 
+.skill-button{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.skill-button button{
+    margin-top: 10px;
+    width:15%;
+    height:50px;
+    text-decoration: none;
+}
