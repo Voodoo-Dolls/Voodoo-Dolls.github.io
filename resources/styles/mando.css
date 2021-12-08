@@ -55,6 +55,13 @@
 
 }
 
+@media only screen and (max-width: 1200px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
 .gun{
     border:rgba(88, 15, 172, 0.514) 2px solid;
     position:relative;
@@ -143,9 +150,6 @@
 
 /*Skill Formating*/
 
-.skill-menu{
-
-}
 
 .skill-title{
     text-align: center;
@@ -182,10 +186,10 @@
     width:64px;
 }
 
-._10, ._15, ._20, ._25{
+/*._10, ._15, ._20, ._25{
     display:none;
 }
-
+*/
 .left-skills{
     grid-column: 1 / span  2;
     border: rgb(255, 255, 255) solid 1px;
@@ -197,6 +201,10 @@
     justify-content: flex-end;
 }
 
+.left-skills .pros li{
+    text-align: left;
+    margin-right:10px;
+}
 .right-skills{
     grid-column: 3 / span 2;
     border:rgb(255, 255, 255) solid 1px;
@@ -207,3 +215,8 @@
     order:-1;
     align-self: center;
 }
+.meta{
+    background-color:rgba(3, 3, 165, 0.301);
+}
+
+

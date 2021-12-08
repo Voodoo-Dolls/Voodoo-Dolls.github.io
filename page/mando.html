@@ -12,6 +12,7 @@
     <!--Favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <nav>
@@ -23,7 +24,9 @@
             </div>
         </a>
 
-        <a href='../index.html' style='text-decoration: none; color:white;'><h1>Voodoo Doll's<br> CD Guide</h1></a>
+        <a href='../index.html' style='text-decoration: none; color:white;'>
+            <h1>Voodoo Doll's<br> CD Guide</h1>
+        </a>
     </div>
 
     <div class='nav-container'>
@@ -72,7 +75,9 @@
     <!--Class Summary-->
     <article class='class-summary'>
         <section class='article-title'>
-            <h2> <img src='../resources/images/main/commando-icon.png' style='height:50px; width:auto; vertical-align: middle; margin-right: 10px; margin-left:10px; padding:5px 0;'>Commando</h2>
+            <h2> <img src='../resources/images/main/commando-icon.png'
+                    style='height:50px; width:auto; vertical-align: middle; margin-right: 10px; margin-left:10px; padding:5px 0;'>Commando
+            </h2>
             <div class='line'>
             </div>
 
@@ -91,7 +96,8 @@
         <section class='pros-cons'>
 
             <div class='pros-class'>
-                <h3><img src='../resources/images/main/strong.png' style='height:64px; width:auto; vertical-align:middle;'>Pros</h3>
+                <h3><img src='../resources/images/main/strong.png'
+                        style='height:64px; width:auto; vertical-align:middle;'>Pros</h3>
                 <ul class='pros'>
                     <li>+ Can extend ‘Zed Time’</li>
                     <li>+ Excellent Trash Clearer</li>
@@ -105,7 +111,8 @@
             </div>
 
             <div class='cons-class'>
-                <h3><img src='../resources/images/main/weak.png' style='height:64px; width:auto; vertical-align:middle;'>Cons</h3>
+                <h3><img src='../resources/images/main/weak.png'
+                        style='height:64px; width:auto; vertical-align:middle;'>Cons</h3>
                 <ul class='cons'>
                     <li>- Slow movement speed</li>
                     <li>- Struggles Against Larges in Close Quarters</li>
@@ -120,7 +127,8 @@
 
     <article class='weapons'>
         <section class='article-title'>
-            <h2><img src='../resources/images/main/weapon-icon.png' style='height:55px; width:auto; vertical-align:middle;'>Weapons</h2>
+            <h2><img src='../resources/images/main/weapon-icon.png'
+                    style='height:55px; width:auto; vertical-align:middle;'>Weapons</h2>
             <div class='line'>
             </div>
             <p>
@@ -223,7 +231,8 @@
                         <source src='../resources/videos/sharp/double-fp.mov'>
                     </video>
                     <div class='gun-content'>
-                        <p>"Choice of full-auto and 3-round-burst fire modes. Alt-fire to toggle between fire modes."</p>
+                        <p>"Choice of full-auto and 3-round-burst fire modes. Alt-fire to toggle between fire modes."
+                        </p>
                         <br>
                         <p>"This AK-12 was taken from a dead Russian Spetsnaz operative for scanning."</p>
                         <ul class='pros'>
@@ -387,7 +396,8 @@
 
     <article>
         <section>
-            <h2><img src='../resources/images/main/skills.png' style='height:55px; width:auto; vertical-align:middle; margin-left:10px;'>Skills WIP</h2>
+            <h2><img src='../resources/images/main/skills.png'
+                    style='height:55px; width:auto; vertical-align:middle; margin-left:10px;'>Skills WIP</h2>
             <div class=line></div>
             <div class='skill-title'>
                 <h2 class='_5'>Ammo Management</h2>
@@ -398,25 +408,135 @@
             </div>
 
             <div class=skill-container>
-                <div class='left-skills'>
-                    <div class='_5'>
-                        <h3 class='skill-name'>Tactical Reload</h3>
-                        <div class='skill-details'>
-                            <p>Increase reload speed with perk weapons.</p>
-                            <img class='skill-img'src='../resources/images/mando/tac.png'>
-                        </div>
+
+                <!--Level 5-->
+                <div class='left-skills _5'>
+                    <h3 class='skill-name'>Tactical Reload</h3>
+                    <div class='skill-details'>
+                        <p>Increase reload speed with perk weapons.</p>
+                        <img class='skill-img' src='../resources/images/mando/tac.png'>
                     </div>
+                    <ul class='pros'>
+                        <li>+ Must have for guns with an underbarrel attachment</li>
+                        <li>+ Great for guns with a long reload</li>
+                    </ul>
+
 
                 </div>
-                <div class='right-skills'>
-                    <div class='_5'>
-                        <h3 class='skill-name'>High Capacity Mags</h3>
-                        <div class='skill-details'>
-                            <p>Increase magazine capacity of perk weapons 50%.</p>
-                            <img class='skill-img' src='../resources/images/mando/high.png'>
-                        </div>
+                <div class='right-skills _5 meta'>
+                    <h3 class='skill-name'>High Capacity Mags</h3>
+                    <div class='skill-details'>
+                        <p>Increase magazine capacity of perk weapons 50%.</p>
+                        <img class='skill-img' src='../resources/images/mando/high.png'>
                     </div>
+                    <ul class='pros'>
+                        <li>+ Some weapons can decap larges in a single magazine</li>
+                        <li>+ Very little trade off due to reload canceling</li>
+                    </ul>
+                </div>
 
+                <!--Level 10-->
+                <div class='left-skills _10 meta'>
+                    <h3 class='skill-name'>Fallback</h3>
+                    <div class='skill-details'>
+                        <p>Increase damage with your 9mm pistol and knife 85%, and increase weapon switching speed 50%
+                        </p>
+                        <img class='skill-img' src='../resources/images/mando/fall.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ Extra weapon switch speed</li>
+                        <li>+ Can switch weapons mid-extension</li>
+                        <li>+ Can decap Rioters with the knife</li>
+                    </ul>
+
+
+                </div>
+                <div class='right-skills _10'>
+                    <h3 class='skill-name'>Impact Rounds</h3>
+                    <div class='skill-details'>
+                        <p>Increase stumble power for perk weapons 150%.</p>
+                        <img class='skill-img' src='../resources/images/mando/impact.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ Good for handling Scrakes</li>
+                    </ul>
+                </div>
+
+                <!--Level 15-->
+                <div class='left-skills _15 meta'>
+                    <h3 class='skill-name'>Tenacious</h3>
+                    <div class='skill-details'>
+                        <p>Increase total Health and Armor 25%.</p>
+                        <img class='skill-img' src='../resources/images/mando/tenacious.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ Extra health</li>
+                        <li>+ Extra armor</li>
+                    </ul>
+
+
+                </div>
+                <div class='right-skills _15'>
+                    <h3 class='skill-name'>Prepared</h3>
+                    <div class='skill-details'>
+                        <p>Carry up to 20% more ammo for each perk weapon. </p>
+                        <img class='skill-img' src='../resources/images/mando/prepared.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ Extra ammo </li>
+                        <li>+ Supports overcapping</li>
+                    </ul>
+                </div>
+
+                <!--Level 20-->
+                <div class='left-skills _20 left meta'>
+                    <h3 class='skill-name'>Hollow Point Rounds</h3>
+                    <div class='skill-details'>
+                        <p>Increase damage of perk weapons 30%</p>
+                        <img class='skill-img' src='../resources/images/mando/HP.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ More damage</li>
+                        <li>+ Allows some weapons to decap larges in a single magazine</li>
+                    </ul>
+
+
+                </div>
+                <div class='right-skills _20'>
+                    <h3 class='skill-name'>Eat Lead</h3>
+                    <div class='skill-details'>
+                        <p>Increase magazine capacity of perk weapons 100%.</p>
+                        <img class='skill-img' src='../resources/images/mando/lead.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ Huge Magazine</li>
+                        <li>+ Supports overcapping</li>
+                    </ul>
+
+                    <!--Level 25-->
+                </div>
+                <div class='left-skills _25'>
+                    <h3 class='skill-name'>ZED TIME - Tactician</h3>
+                    <div class='skill-details'>
+                        <p>During ZED Time, you reload perk weapons at full speed and switch perk weapons twice as fast.</p>
+                        <img class='skill-img' src='../resources/images/mando/tactician.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ Must have for guns with an underbarrel attachment</li>
+                        <li>+ Great for guns with a long reload</li>
+                    </ul>
+                </div>
+
+                <div class='right-skills _25 meta'>
+                    <h3 class='skill-name'>ZED TIME - Machine Gunner</h3>
+                    <div class='skill-details'>
+                        <p>During ZED Time, you do 3% more damage with perk weapons and shoot 3x faster with all guns. </p>
+                        <img class='skill-img' src='../resources/images/mando/gunner.png'>
+                    </div>
+                    <ul class='pros'>
+                        <li>+ Some weapons can decap larges in a single mag</li>
+                        <li>+ Very little trade off due to reload canceling</li>
+                    </ul>
                 </div>
 
             </div>
@@ -430,22 +550,28 @@
             <div class='line'>
             </div>
             <p>
-                In general, the Commando should be a dedicated trash killer and should be placed in any trash heavy lane.
-                Commandos that face many larges should be laned with a dedicated large killer or have a teammate available as a flex
+                In general, the Commando should be a dedicated trash killer and should be placed in any trash heavy
+                lane.
+                Commandos that face many larges should be laned with a dedicated large killer or have a teammate
+                available as a flex
                 at the very minimum.
             </p>
             <p>
-                When Zed-Time occurs, the Commando should focus on keeping the Zed-Time going as long as possible; this will enable players
+                When Zed-Time occurs, the Commando should focus on keeping the Zed-Time going as long as possible; this
+                will enable players
                 to dish out crazy amount of damage and potentially take back a jeopardized hold.
             </p>
 
             <p>
-                Commandos that choose the HMTech-401 Assault Rifle as part of their loadouts, they gain a secondary role as a backup healer whenever
-                the Medic dies or for no Medic runs. 
+                Commandos that choose the HMTech-401 Assault Rifle as part of their loadouts, they gain a secondary role
+                as a backup healer whenever
+                the Medic dies or for no Medic runs.
             </p>
 
         </section>
     </article>
+
+
 
     <!--Common Loadouts-->
     <article>
@@ -454,7 +580,7 @@
             <div class='line'></div>
             <div class='loadout-container'>
                 <div>
-                <h3>Weapons</h3>
+                    <h3>Weapons</h3>
                 </div>
 
                 <div>
@@ -471,7 +597,7 @@
             </div>
         </section>
     </article>
-    
+
 </body>
 
 </html>
