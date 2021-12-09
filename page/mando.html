@@ -62,8 +62,8 @@
                 <a href='../page/demo.html'><img src='../resources/images/main/demo-icon.png'>Demo</a>
                 <a href='../page/firebug.html'><img src='../resources/images/main/firebug-icon.png'>Firebug</a>
                 <a href='../page/zerk.html'><img src='../resources/images/main/zerk-icon.png'>Beserker</a>
-                <a href='../page/survivalist.html'><img
-                        src='../resources/images/main/survivalist-icon.png'>Survivalist</a>
+                <a href='../page/survivalist.html'>
+                <img src='../resources/images/main/survivalist-icon.png'>Survivalist</a>
             </div>
         </div>
     </div>
@@ -145,7 +145,7 @@
                     <h3>AR-15 Varmint Rifle</h3>
                     <img src='../resources/images/mando/ar-15-model.png'>
                     <video width='90%' height='auto' controls autoplay muted>
-                        <source src='../resources/videos/sharp/double-fp.mov'>
+                        <source src='../resources/videos/mando/ar15.mov'>
                     </video>
                     <div class='gun-content'>
                         <p>"Choice of 3-round-burst or semi-auto fire modes. Alt-fire to toggle between fire modes."</p>
@@ -435,6 +435,7 @@
                     </ul>
                 </div>
 
+
                 <!--Level 10-->
                 <div class='left-skills _10 meta'>
                     <h3 class='skill-name'>Fallback</h3>
@@ -458,7 +459,8 @@
                         <img class='skill-img' src='../resources/images/mando/impact.png'>
                     </div>
                     <ul class='pros'>
-                        <li>+ Good for handling Scrakes</li>
+                        <li>+ Good for handling Scrakes solo</li>
+                        <li>+ Can potentially instantly kill bloats</li>
                     </ul>
                 </div>
 
@@ -543,10 +545,25 @@
 
             </div>
             <!--Button Grid-->
+            <div class='_5'>
+                <p>
+                    For Ammo Managment, both Tactical Reload and High Capacity Mags are viable. However, due to the fact that most Commando guns
+                    can be reload canceled, High Capacity Mags is considered the better choice in most scenarios. Also, some weapons can decap
+                    larges from the extra ammo gained from High Capacity Mags without reloading.
+
+                </p>
+            </div>
+            <div class='_10'>
+                <p>
+                    For Tactics, Fallback is a clear winner over Impact Rounds. Fallback offers too much benefits that are practical
+                    in any situation. While Impact Rounds can mess up Scrake take downs and instantly killing Bloats isn't really useful
+                    for the most part.
+                </p>
+            </div>
             <div class='skill-button'>
                 <button id='Level:5' onclick="levelFive()">Level: 5</button>
                 <button id='Level:10' onclick='levelTen()'>Level: 10</button>
-                <button id='Level:15' onclick='levelFifteen()'>level: 15</button>
+                <button id='Level:15' onclick='levelFifteen()'>Level: 15</button>
                 <button id='Level:20' onclick='levelTwenty()'>Level: 20</button>
                 <button id='Level:25' onclick='levelTwentyfive()'>Level: 25</button>
             </div>
@@ -566,12 +583,13 @@
                 available as a flex
                 at the very minimum.
             </p>
+            <br>
             <p>
                 When Zed-Time occurs, the Commando should focus on keeping the Zed-Time going as long as possible; this
                 will enable players
                 to dish out crazy amount of damage and potentially take back a jeopardized hold.
             </p>
-
+            <br>
             <p>
                 Commandos that choose the HMTech-401 Assault Rifle as part of their loadouts, gain a secondary role
                 as a backup healer whenever
