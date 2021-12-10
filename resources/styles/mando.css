@@ -235,3 +235,7 @@
     overflow-wrap: break-word;
     background-image: linear-gradient(rgba(0, 238, 255, 0.623), rgba(0, 19, 128, 0.589));
 }
+
+.details{
+    margin-top:10px;
+}
