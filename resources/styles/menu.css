@@ -20,7 +20,7 @@ h3{
     font-size:1.5em;
 }
 
-h1, h2, h3, a{
+h1, h2, h3, a, button{
     font-family: 'Oswald', sans-serif;
 }
 p{
@@ -28,7 +28,7 @@ p{
 }
 
 p, li{
-    margin:2px 2px;
+    margin:1px 2px;
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
 }
