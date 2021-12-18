@@ -55,6 +55,13 @@
 
 }
 
+@media only screen and (max-width: 1200px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
 .gun{
     border:rgba(88, 15, 172, 0.514) 2px solid;
     position:relative;
@@ -62,7 +69,7 @@
     color: rgba(255, 255, 255, 0.651);
 }
 
-.gun video{
+.gun iframe{
     display:none;
 }
 
@@ -81,6 +88,7 @@
 
 .rating{
     text-align: center;
+    margin-bottom:5px;
 }
 
 .rating h3{
@@ -92,29 +100,26 @@
 }
 
 .gun-content p{
-    margin:0 20px;
+    margin:-5px 20px;
 }
 
 .gun-content li{
     margin-left:-20px;
+    margin-bottom:-10px;
 }
 
-.container{
-
-    width:100%;
-    height:1px;
-    background:red;
-}
 
 .gun:hover{
     transform: scale(1.2);
     z-index: 1;
     color: white;
-    border-color: rgba(250, 220, 51, 0.699);
+    border-color: rgba(255, 217, 0, 0.918);
+    background-color:black;
     border-bottom: none;
 }
 
-.gun:hover video{
+.gun:hover iframe{
+    z-index: 1;
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -122,13 +127,13 @@
 }
 
 .gun:hover .gun-content{
-    border: rgba(250, 220, 51, 0.699) 2px solid;
+    border: rgba(255, 217, 0, 0.918) 2px solid;
     border-top: none;
     display:block;
     position:absolute;
-    background-color:rgba(0, 0, 0, 0.76);
+    background-color:rgb(0, 0, 0);
     width:100%;
-    z-index: 1;
+    z-index: 2;
     margin:0 -2px;
 }
 
@@ -143,9 +148,6 @@
 
 /*Skill Formating*/
 
-.skill-menu{
-
-}
 
 .skill-title{
     text-align: center;
@@ -186,6 +188,7 @@
     display:none;
 }
 
+
 .left-skills{
     grid-column: 1 / span  2;
     border: rgb(255, 255, 255) solid 1px;
@@ -197,6 +200,10 @@
     justify-content: flex-end;
 }
 
+.left-skills .pros li{
+    text-align: left;
+    margin-right:10px;
+}
 .right-skills{
     grid-column: 3 / span 2;
     border:rgb(255, 255, 255) solid 1px;
@@ -206,4 +213,29 @@
 .right-skills img{
     order:-1;
     align-self: center;
+}
+.meta{
+    background-color:rgba(3, 3, 165, 0.301);
+}
+
+.skill-button{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-button button{
+    border: none;
+    margin-top: 10px;
+    width:15%;
+    height:50px;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    background-image: linear-gradient(rgba(0, 238, 255, 0.623), rgba(0, 19, 128, 0.589));
+}
+
+.details{
+    margin-top:10px;
 }
