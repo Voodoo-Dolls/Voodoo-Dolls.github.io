@@ -239,3 +239,14 @@
 .details{
     margin-top:10px;
 }
+
+/*Loadout*/
+
+.loadout img{
+    height:200px;
+    width:auto;
+}
+
+.loadout p{
+    text-align: right;
+}
